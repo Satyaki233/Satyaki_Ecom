@@ -1,6 +1,7 @@
 git add .
 
-DATE = $(date)
+DATE=$(date)
+
 
 git commit -m "the changes is made by Satyaki on $DATE"
 
