@@ -1,7 +1,7 @@
 import React,{useState , useEffect} from 'react';
 import NavBar from './Components/NavBar/NavBar';
 import Products from './Components/Products/Products';
-
+import Cart from './Components/Cart/Cart';
 import {commerce} from './lib/commerce';
 
 const App=()=>{
@@ -42,12 +42,16 @@ const App=()=>{
   },[])
 
   console.log(products);
-  console.log(cart.total_items);
+  
     return(
       <>
          <div>
              <NavBar totalItems={cart.total_items}/>
+             <div style={{ marginTop: '70px'}}>
+             <Cart cart={cart}/>
              <Products products={products} AddToCart={handelAddToCart}/>
+
+             </div>
          </div>
       </>
     )

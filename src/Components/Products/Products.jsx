@@ -12,7 +12,7 @@ const Products = ({products,AddToCart}) => {
     return (
         
         <main className={classes.content}>
-            <div className={classes.toolbar} style={{ marginTop:'1.5rem'}}>
+            <div  >
 
             <Grid container justify="center" spacing={4} >
               {products.map(product =><div key={product.id}> <Product product={product} AddToCart={AddToCart}/></div>)}
