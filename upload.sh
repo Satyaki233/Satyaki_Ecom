@@ -1,6 +1,6 @@
 git add .
 
-git rm .env --cache
+# git rm .env --cache
 
 DATE=$(date)
 
